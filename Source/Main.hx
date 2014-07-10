@@ -21,9 +21,9 @@ class Main extends Sprite {
 
 		gameMode = new StateMachine();
 
-		gameMode.add("mainmenu", new MainMenuState());
-		gameMode.add("gameplay", new GamePlayState());
-		gameMode.add("gameover", new GameOverState());
+		gameMode.add("mainmenu", new MainMenuState(gameMode));
+		gameMode.add("gameplay", new GamePlayState(gameMode));
+		gameMode.add("gameover", new GameOverState(gameMode));
 
 		gameMode.change("mainmenu");
 

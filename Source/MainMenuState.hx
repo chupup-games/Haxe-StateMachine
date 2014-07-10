@@ -2,8 +2,12 @@ package ;
 
 class MainMenuState implements IState {
 
-	public function new() {
-		// code
+	private var gameMode:StateMachine;
+
+	public function new(sm:StateMachine) {
+		
+		gameMode = sm;
+
 	}
 
 	public function update(deltaTime:Float):Void {
