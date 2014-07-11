@@ -26,7 +26,7 @@ gameMode is a reference to the state-machine, you need it inside the states
 for change to another state, for example: gameMode.change("gameplay"); 
 
 this is a reference to the openfl.display.Sprite your Main class extends. It
-is your like your "drawing canvas", where the graphics get rendered on.
+is like your "drawing canvas", where the graphics get rendered on.
 
 Of course, you need also to add a IngameMenuState class. But this is easy - just copy MainMenuState and change it's class name, then save it under "IngameMenuState.hx" in your source folder.
 
