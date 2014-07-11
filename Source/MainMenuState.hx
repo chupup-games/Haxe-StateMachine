@@ -3,10 +3,12 @@ package ;
 class MainMenuState implements IState {
 
 	private var gameMode:StateMachine;
+	private var game:openfl.display.Sprite;
 
-	public function new(sm:StateMachine) {
+	public function new(sm:StateMachine, sprite:openfl.display.Sprite) {
 		
 		gameMode = sm;
+		game = sprite;
 
 	}
 
